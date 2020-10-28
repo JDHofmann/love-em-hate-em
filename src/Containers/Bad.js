@@ -6,6 +6,7 @@ function Bad() {
         padding: "2vh 5vw",
         margin: "2vh 0"
     }
+    
     return(
         <div style={styling}>Not a Fan of...</div>
     )

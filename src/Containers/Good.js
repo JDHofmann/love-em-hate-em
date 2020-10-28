@@ -7,7 +7,7 @@ function Good(props) {
         padding: "2vh 5vw",
         margin: "2vh 0"
     }
-    // let goodGuys = this.props.members.map( )
+    
     return(
         <div style={styling}>I'm a Fan of...</div>
     )

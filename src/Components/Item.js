@@ -1,15 +1,7 @@
 import React from 'react'
 
 export default class Item extends React.Component {
-    
-    goodClickClicked = () => {
-        this.props.goodClickHandler(this.props.member)
-    }
 
-    badClickClicked = () => {
-        this.props.badClickHandler(this.props.member)
-    }
-    
     render(){
         const styling = {
             padding: ".5vh 5vw",
@@ -19,16 +11,12 @@ export default class Item extends React.Component {
         }
         return(
             <div style={styling}>
-                <h3>{this.props.member.name}</h3>
+                <h3>{/* something here */}</h3>
                 <img 
                     className="image-thumb"
-                    src={this.props.member.img}></img>
-                <button
-                    onClick={this.goodClickClicked}
-                >+</button>
-                <button
-                    onClick={this.badClickClicked}
-                >-</button>
+                    src={/* something here */}></img>
+                <button>+</button>
+                <button>-</button>
             </div>
         )
     }
