@@ -7,9 +7,17 @@ function Good(props) {
         padding: "2vh 5vw",
         margin: "2vh 0"
     }
-    // let goodGuys = this.props.members.map( )
+
+    let goodOnes = props.artists.map( a => 
+    <Item        
+        badClickHandler={props.badClickHandler}
+        goodClickHandler={props.goodClickHandler}
+        member={a}
+        /> )
     return(
-        <div style={styling}>I'm a Fan of...</div>
+        <div style={styling}>I'm a Fan of...
+           {goodOnes} 
+        </div>
     )
 }
 export default Good

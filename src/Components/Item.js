@@ -22,7 +22,9 @@ export default class Item extends React.Component {
                 <h3>{this.props.member.name}</h3>
                 <img 
                     className="image-thumb"
-                    src={this.props.member.img}></img>
+                    src={this.props.member.img}
+                    alt={this.props.member.name}
+                    ></img>
                 <button
                     onClick={this.goodClickClicked}
                 >+</button>
